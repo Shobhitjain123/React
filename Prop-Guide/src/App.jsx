@@ -4,7 +4,7 @@ import ChildrenProps from "./components/ChildrenProps";
 import ComplexProps from "./components/ComplexProps";
 import RefProps from "./components/RefProps";
 import ThemeToggeler from "./components/ThemeToggeler";
-
+import { ThemeProvider } from "./components/ThemeToggeler";
 function Navigation() {
   const isDark = true;
   const sections = [
@@ -94,7 +94,11 @@ function AppContent() {
   );
 }
 function App() {
-  return <AppContent />;
+  return (
+    <ThemeProvider>
+      <AppContent />
+    </ThemeProvider>
+  );
 }
 
 export default App;
