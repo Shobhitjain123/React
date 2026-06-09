@@ -1,12 +1,13 @@
 import Counter from "./components/Counter";
+import CounterValue from "./components/CounterValue";
 
 import "./App.css";
 
 function App() {
   return (
     <>
-      <h1>Zustand State Management</h1>
       <Counter />
+      <CounterValue />
     </>
   );
 }
